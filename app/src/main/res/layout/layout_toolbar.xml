@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTitle"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="20px"
+            android:id="@+id/title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerVertical="true"
+             />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/title_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="60px" />
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55px"
+            android:textColor="@android:color/white"
+            android:textSize="42px" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shequn.liming.mobaidanche.ui.main.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorTitle"
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_user_info"
+                android:layout_marginLeft="55px"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/icon_actionbar_home"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize" />
+
+            <TextView
+                android:drawableLeft="@mipmap/mobike_title_img"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize" />
+
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_marginRight="55px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize" />
+
+
+            <TextView
+                android:layout_marginRight="70px"
+                android:layout_toLeftOf="@id/tv_notice"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/icon_actionbar_search_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/tv_to_login"
+        android:paddingRight="35px"
+        android:drawableRight="@mipmap/right_arrow"
+        android:paddingLeft="35px"
+        android:gravity="center_vertical"
+        android:text="您尚未完成手机验证，请先进行手机验证"
+        android:textColor="@android:color/white"
+        android:background="#F06958"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_marginBottom="60px"
+            android:layout_marginRight="40px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/button_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_open_lock"
+            android:drawablePadding="10px"
+            android:drawableLeft="@mipmap/scan_unlock_img"
+            android:gravity="center"
+            android:layout_marginBottom="60px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:text="扫码开锁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_scan"/>
+
+
+        <ImageView
+            android:id="@+id/tv_red_pocket"
+            android:layout_marginBottom="50px"
+            android:layout_above="@id/iv_call"
+            android:layout_marginRight="45px"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/button_red_packet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/tv_location"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="45px"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/button_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/search_center_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

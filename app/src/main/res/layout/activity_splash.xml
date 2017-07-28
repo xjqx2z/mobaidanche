@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shequn.liming.mobaidanche.SplashActivity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="1600px" />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:scaleType="centerInside"
+        android:src="@mipmap/splash_logo"
+        android:layout_below="@id/iv_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="320px" />
+
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:visibility="gone"
+        android:paddingBottom="15px"
+        android:paddingTop="15px"
+        android:paddingRight="25px"
+        android:paddingLeft="25px"
+        android:background="@drawable/textview_skip_bg"
+        android:layout_marginRight="45px"
+        android:layout_marginBottom="40px"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/iv_logo"
+        android:text="跳过 3"
+        android:textColor="@android:color/white"
+        android:textSize="45px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

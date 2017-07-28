@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shequn.liming.mobaidanche.ui.openlock.OpenLockActivity">
+
+
+
+
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        app:qrcv_isCenterVertical="true"
+        android:id="@+id/zxingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/transparent"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@android:color/white"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_maskColor="#88000000"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@android:color/holo_red_light"
+        app:qrcv_scanLineSize="1dp"
+         />
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_toolbar"/>
+
+
+    <TextView
+        android:layout_marginBottom="200px"
+        android:layout_marginLeft="200px"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="35px"
+        android:textColor="@android:color/white"
+        android:drawableTop="@drawable/button_scan_input"
+        android:text="输入单车编号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="200px"
+        android:layout_marginRight="200px"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="35px"
+        android:textColor="@android:color/white"
+        android:drawableTop="@drawable/button_scan_light"
+        android:text="打开手电筒"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@mipmap/scan_qrcode_bike_img"
+        android:layout_marginTop="300px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

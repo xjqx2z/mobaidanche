@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/activity_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+         >
+        
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:background="#F4F6F9"
+            android:layout_width="880px"
+            android:layout_height="570px">
+            
+            
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_user_portrait"
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="70px"
+                android:layout_width="190px"
+                android:layout_height="190px" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_marginLeft="60px"
+                android:textColor="@android:color/black"
+                android:textSize="50px"
+                android:layout_alignTop="@id/iv_user_portrait"
+                android:layout_toRightOf="@id/iv_user_portrait"
+                android:text="18306661593"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="60px"
+                android:paddingLeft="50px"
+                android:gravity="center_vertical"
+                android:background="@drawable/button_credit_score"
+                android:textColor="@android:color/white"
+                android:textSize="32px"
+                android:layout_alignBottom="@id/iv_user_portrait"
+                android:layout_toRightOf="@id/iv_user_portrait"
+                android:text="信用积分 100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:paddingRight="85px"
+                android:paddingLeft="85px"
+                android:layout_marginBottom="60px"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="55px"
+                        android:text="16.0"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="38px"
+                        android:text="里程（公里）"
+                        android:textColor="#919399"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="55px"
+                        android:text="16.0"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="38px"
+                        android:text="减排（千克）"
+                        android:textColor="#919399"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="55px"
+                        android:text="16.0"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="38px"
+                        android:text="消耗（卡）"
+                        android:textColor="#919399"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_button"
+            android:layout_width="880px"
+            android:layout_height="170px"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:gravity="center"
+                android:textSize="45px"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="设置"
+                android:layout_width="240px"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:gravity="center"
+                android:textSize="45px"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:text="用户指南"
+                android:layout_width="240px"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="50px"
+            android:layout_above="@id/ll_button"
+            android:layout_below="@id/rl_top"
+            android:orientation="vertical"
+            android:layout_width="880px"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="180px">
+
+                <TextView
+                    android:drawablePadding="30px"
+                    android:drawableLeft="@mipmap/ic_drawer_money"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="48px"
+                    android:paddingLeft="75px"
+                    android:gravity="center_vertical"
+                    android:text="我的钱包"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textSize="40px"
+                    android:textColor="@android:color/darker_gray"
+                    android:paddingRight="75px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.5元"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:drawablePadding="30px"
+                android:drawableLeft="@mipmap/ic_drawer_coupon"
+                android:textColor="@android:color/black"
+                android:textSize="48px"
+                android:paddingLeft="75px"
+                android:gravity="center_vertical"
+                android:text="我的卡券"
+                android:layout_width="match_parent"
+                android:layout_height="180px" />
+
+            <TextView
+                android:drawablePadding="30px"
+                android:drawableLeft="@mipmap/ic_drawer_trip"
+                android:textColor="@android:color/black"
+                android:textSize="48px"
+                android:paddingLeft="75px"
+                android:gravity="center_vertical"
+                android:text="我的行程"
+                android:layout_width="match_parent"
+                android:layout_height="180px" />
+
+            <TextView
+                android:drawablePadding="30px"
+                android:drawableLeft="@mipmap/ic_drawer_invite"
+                android:textColor="@android:color/black"
+                android:textSize="48px"
+                android:paddingLeft="75px"
+                android:gravity="center_vertical"
+                android:text="邀请好友"
+                android:layout_width="match_parent"
+                android:layout_height="180px" />
+
+            <TextView
+                android:drawablePadding="30px"
+                android:drawableLeft="@mipmap/ic_drawer_sticker"
+                android:textColor="@android:color/black"
+                android:textSize="48px"
+                android:paddingLeft="75px"
+                android:gravity="center_vertical"
+                android:text="我的贴纸"
+                android:layout_width="match_parent"
+                android:layout_height="180px" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#E2E5E7"
+            android:layout_width="880px"
+            android:layout_height="2px"
+            android:layout_above="@id/ll_button"/>
+
+        
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
