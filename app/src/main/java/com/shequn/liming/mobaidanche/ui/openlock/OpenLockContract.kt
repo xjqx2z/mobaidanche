@@ -9,6 +9,7 @@ object OpenLockContract {
 
         var presenter: IOpenLockPresenter
 
+        fun openLock(bikeNumber: String)
 
     }
 
@@ -16,6 +17,17 @@ object OpenLockContract {
         var presenter: IOpenLockPresenter
 
 
+        fun showLoading(text: String)
+
+        fun hideLoading()
+
+
+        fun lightIsOn()
+
+        fun lightIsOff()
+
+
+        fun gotoMain()
 
 
     }
@@ -24,6 +36,12 @@ object OpenLockContract {
 
         var model: IOpenLockModel
         var view: IOpenLockView?
+
+        fun openLock(bikeNumber: String)
+
+        fun openLockSucc()
+
+        fun openLockFail()
 
 
     }

@@ -24,16 +24,22 @@ interface ApiService {
     fun getAdvertisementImage(): Observable<HttpResult<String?>>
 
     /**
-     * 获取广告图片
+     * 获取验证码
      */
     @GET("test/getVerificationCode")
     fun getVerificationCode(@Query("phoneNum")phoneNum: String): Observable<HttpResult<String?>>
 
     /**
-     * 获取广告图片
+     * 登录
      */
     @GET("test/loginOrRegister")
     fun loginOrRegister(@Query("phoneNum")phoneNum: String, @Query("verificationCode")verificationCode: String): Observable<HttpResult<User?>>
+
+    /**
+     * 解锁车辆
+     */
+    @GET("test/openLock")
+    fun openLock(@Query("bikeNumber")bikeNumber: String, @Query("userId")userId: String ): Observable<HttpResult<String?>>
 }
 
 object API {

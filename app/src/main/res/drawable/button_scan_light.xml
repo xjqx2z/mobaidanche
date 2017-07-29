@@ -2,4 +2,6 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@mipmap/scan_qrcode_flash_light_off" android:state_pressed="false" />
     <item android:drawable="@mipmap/scan_qrcode_flash_light_on" android:state_pressed="true" />
+    <item android:drawable="@mipmap/scan_qrcode_flash_light_on" android:state_selected="true" />
+    <item android:drawable="@mipmap/scan_qrcode_flash_light_off" android:state_selected="false" />
 </selector>
